@@ -1,18 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Junge&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Titillium+Web&display=swap');
 
 :root {
     --vertical-space: 2rem;
     --horizontal-space: 3rem;
+    
+    --light-color: #F2F2F2;
+    --body-color: #404040;
+    --heading-color: #800000;
+    --contrast-color: #8C2E07;
 }
 
 body {
     font-size: 18px;
     line-height: 1.5;
+    background-image: linear-gradient(45deg, transparent 0%, transparent 2%,rgba(255,0,0, 0.04) 2%, rgba(255,0,0, 0.04) 36%,transparent 36%, transparent 100%),linear-gradient(0deg, transparent 0%, transparent 48%,rgba(255,0,0, 0.04) 48%, rgba(255,0,0, 0.04) 64%,transparent 64%, transparent 100%),linear-gradient(90deg, transparent 0%, transparent 70%,rgba(255,0,0, 0.04) 70%, rgba(255,0,0, 0.04) 73%,transparent 73%, transparent 100%),linear-gradient(90deg, transparent 0%, transparent 17%,rgba(255,0,0, 0.04) 17%, rgba(255,0,0, 0.04) 54%,transparent 54%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    color: var(--body-color);
 }
 
 h1, h2, h3 {
     line-height: 1.2;
-    font-family: 'Junge', serif;
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--heading-color);
+}
+
+a {
+    color: var(--body-color);
+    text-decoration-color: var(--contrast-color);
+}
+
+a:hover {
+    color: var(--contrast-color);
+    text-decoration-color: var(--heading-color);
 }
 
 body#about img {
@@ -23,7 +41,7 @@ p {
     max-width: 50em;
 }
 
-main, footer {
+main, nav, footer {
     font-family: 'PT Sans', sans-serif;
 }
 
