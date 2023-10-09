@@ -7,7 +7,10 @@
     <title>John Dickinson's Portfolio</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body id="portfolio">
@@ -22,40 +25,33 @@
         </ul>
     </nav>
     <main>
-        <h1>Portfolio</h1>
-        <ul id="portfolioItems">
-            <li>
-                <h2><a href="#">Markup Only</a></h2>
-                <img src="images/aboutPageScreenshot.png" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Felis eget velit aliquet sagittis. Cursus risus at ultrices mi tempus
-                    imperdiet nulla malesuada.</p>
-            </li>
+        <section>
+            <h2>Portfolio</h2>
+            <ul id="portfolioItems">
+                <li>
+                    <h3><a href="https://github.com/rhit-csse220/csse220-fall-2022-23-final-project-f23-a-503">Arcade
+                            Game Project</a></h3>
+                    <img src="images/arcadeGamePicture.PNG" alt="A screenshot of the arcade game project" />
+                    <p>Developed a recreation of the 2D arcade game <i>Joust</i> in a team of 3. Implemented graphics,
+                        physics, and collisions in Java.</p>
+                </li>
 
-            <li>
-                <h2><a href="#">Project Name</a></h2>
-                <img src="images/aboutPageScreenshot.png" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Arcu
-                    vitae elementum curabitur vitae.</p>
-            </li>
+                <li>
+                    <h3><a href="#">Editor Trees</a></h3>
+                    <img src="images/editorTreesPicture.PNG" alt="A screenshot of the editor trees project" />
+                    <p>Created a height balanced binary tre that held text with a partner. For this tree we implemented
+                        efficient node rotation algorithms using rank and balance codes to keep the tree height balanced
+                        and efficiently traverable.</p>
+                </li>
 
-            <li>
-                <h2><a href="#">Project Name</a></h2>
-                <img src="images/aboutPageScreenshot.png" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Ut
-                    tristique et egestas quis ipsum suspendisse ultrices gravida.</p>
-            </li>
-
-            <li>
-                <h2><a href="#">Project Name</a></h2>
-                <img src="images/aboutPageScreenshot.png" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut pharetra sit amet aliquam id diam maecenas ultricies. Odio morbi quis
-                    commodo odio aenean.</p>
-            </li>
-        </ul>
+                <li>
+                    <h3><a href="#">Guitar Hero</a></h3>
+                    <img src="images/guitarHeroPicture.PNG" alt="A screenshot of the guitar hero lab" />
+                    <p>Implemented the game <i>Guitar Hero</i> using Verilog. This game was able to be played on an FPGA
+                        board.</p>
+                </li>
+            </ul>
+        </section>
     </main>
     <footer>
         You can email at dickinje@rose-hulman.edu
