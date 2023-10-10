@@ -14,6 +14,13 @@ rhit.PageController = class {
                 this.unhighlight(item);
             };
         }
+
+        let topButtons = document.querySelectorAll(".topButton");
+        for (let topButton of topButtons) {
+            topButton.onclick = (event) => {
+                window.scrollTo(0, 0);
+            };
+        }
     }
 
     highlight(item) {

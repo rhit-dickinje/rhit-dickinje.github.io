@@ -118,7 +118,18 @@ header h1, footer h1 {
     margin: 0;
 }
 
+.topButton {
+    background-color: #800000;
+    color: white;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
 body#portfolio ul#portfolioItems {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
     list-style-type: none;
     padding: 0;
 }
