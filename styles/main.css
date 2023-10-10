@@ -120,6 +120,7 @@ header h1, footer h1 {
 
 body#portfolio ul#portfolioItems {
     list-style-type: none;
+    padding: 0;
 }
 
 @media screen and (min-width: 25em) {
