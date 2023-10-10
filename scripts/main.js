@@ -1,31 +1,29 @@
 var rhit = rhit || {};
 
-rhit.variableName = "";
-
 rhit.PageController = class {
     constructor() {
         let group = document.querySelectorAll(".group")
         for (let item of group) {
             item.onmouseenter = (event) => {
-                this.increaseSize(item);
+                this.highlight(item);
             };
         }
 
         for (let item of group) {
             item.onmouseleave = (event) => {
-                this.decreaseSize(item);
+                this.unhighlight(item);
             };
         }
     }
 
-    increaseSize(item) {
+    highlight(item) {
         item.style.setProperty("border", "2px solid black");
-        console.log("Item touched")
+        item.style.setProperty("background-color", "rgba(128, 0, 0, 0.1)");
     }
 
-    decreaseSize(item) {
-        item.style.setProperty("border", "0px solid black");
-        console.log("Item touched")
+    unhighlight(item) {
+        item.style.setProperty("border", "none");
+        item.style.setProperty("background-color", "rgba(128, 0, 0, 0)");
     }
 }
 

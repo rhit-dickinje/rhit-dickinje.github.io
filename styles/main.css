@@ -8,6 +8,7 @@
     --body-color: #404040;
     --heading-color: #800000;
     --contrast-color: #8C2E07;
+
 }
 
 body {
@@ -62,7 +63,7 @@ body {
 }
 
 body {
-    max-width: 50em;
+    max-width: 60em;
 }
 
 body > * {
