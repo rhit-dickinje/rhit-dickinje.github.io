@@ -18,7 +18,7 @@ rhit.PageController = class {
         let topButtons = document.querySelectorAll(".topButton");
         for (let topButton of topButtons) {
             topButton.onclick = (event) => {
-                window.scrollTo(0, 0);
+                this.scrollToTop();
             };
         }
     }
@@ -31,6 +31,10 @@ rhit.PageController = class {
     unhighlight(item) {
         item.style.setProperty("border", "none");
         item.style.setProperty("background-color", "rgba(128, 0, 0, 0)");
+    }
+
+    scrollToTop() {
+        window.scrollTo(0, 0);
     }
 }
 
