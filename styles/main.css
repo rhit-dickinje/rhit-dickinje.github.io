@@ -119,11 +119,7 @@ header h1, footer h1 {
 }
 
 body#portfolio ul#portfolioItems {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
     list-style-type: none;
-    padding: 0;
 }
 
 @media screen and (min-width: 25em) {
